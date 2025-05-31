@@ -7,12 +7,10 @@
     /*Lion*/
     --accent2-color: #3B5249;
     /*Feldgrau*/
-    --heading-font: "Static", PT-serif
-        /*Bold 700*/
-    ;
-    --body-font: "Static", PT-serif
-        /*Regular 400*/
-    ;
+    --heading-font: 'PT Serif', serif;
+    /*Bold 700*/
+    --body-font: 'PT Serif', serif;
+    /*Regular 400*/
 }
 
 * {
@@ -26,25 +24,22 @@ body {
     color: var(--accent2-color);
 }
 
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav,
-p,
 section,
 article {
-    margin: 16px;
+    margin: 16px auto;
     padding: 8px;
+    max-width: 840px;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
 }
 
 .socialmedia a {
@@ -53,30 +48,191 @@ article {
 
 .hero {
     position: relative;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
+.hero article {
     position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.9;
+    bottom: 20px;
+    left: 20px;
     background-color: var(--accent1-color);
-    color: white;
-}
-
-article {
-    font-style: var(--body-font);
+    padding: 16px;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    color: var(--accent2-color);
 }
 
 .hero article img {
     float: right;
     width: 125px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    /* logo, h1, nav */
+    align-items: center;
+    gap: 16px;
+    background-color: var(--accent2-color);
+    padding: 10px 20px;
+    color: white;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header nav {
+    grid-column: 3/4;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+header nav li {
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    /* Style for links */
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.history-section {
+    text-align: center;
+    /* Center the H2 */
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.history-content p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.history-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Styling for Adventure Section */
+.adventures-section {
+    text-align: center;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    /* Responsive grid for images */
+    gap: 20px;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 840px;
+    padding: 16px;
+}
+
+.adventure-grid figure {
+    text-align: center;
+    margin: 0;
+}
+
+.adventure-grid img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto 8px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: var(--accent2-color);
+}
+
+footer {
+    background-color: var(--accent2-color);
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
+    border-top: 2px solid var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 840px;
+    margin: 32px auto 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+footer .socialmedia {
+    margin-top: 0;
+    display: flex;
+    gap: 8px;
+    margin-right: 0;
+    padding: 0;
+}
+
+footer .socialmedia img {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+footer .socialmedia img:hover {
+    transform: scale(1.1);
 }

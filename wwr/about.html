@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Jackson Tanner | WDD 130</title>
     <meta name="author" content="Jackson Tanner">
     <meta name="description" content="Jackson Tanner, WDD 130 White-water Rafting Site.">
@@ -16,18 +16,28 @@
 <body>
     <header>
         <img src="images/raftinglogo.jpg" alt="Rafting Site Logo">
+        <h1>RapidRush Adventures</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact us</a>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="trips.html">Trips</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
         <div class="hero">
             <img src="images/hero.jpg" alt="Background image.">
             <article>
-                <h1>RapidRush Adventures</h1>
                 <img src="images/happy.jpg" alt="Happy Client">
                 <p>At RapidRush Adventures, our purpose is to create unforgettable experiences on the water by
                     connecting people with the thrill of nature. We believe adventure brings people together, challenges
@@ -37,19 +47,45 @@
                     here to make sure you feel confident, inspired, and ready to ride the current.</p>
             </article>
         </div>
-        <section>
+        <section class="history-section">
             <h2>History</h2>
-            <p>Founded in 2008 by a group of river-loving friends, RapidRush Adventures started with one raft and a
-                passion for sharing the thrill of white-water rafting. What began as weekend trips quickly grew into a
-                trusted adventure company known for fun, safety, and unforgettable river experiences.</p>
+            <div class="history-content">
+                <p>Founded in 2008 by a group of river-loving friends, RapidRush Adventures started with one raft and a
+                    passion for sharing the thrill of white-water rafting. What began as weekend trips quickly grew into
+                    a trusted adventure company known for fun, safety, and unforgettable river experiences.</p>
+                <img src="images/history.jpg" alt="Rafting History">
+                <p>Our commitment to safety and customer satisfaction quickly made us a favorite among adventure
+                    seekers.
+                    Over the years, we've expanded our fleet, explored new rivers, and built a team of experienced
+                    guides
+                    who are passionate about sharing the beauty and excitement of the outdoors. We're proud of our
+                    journey and look forward to many more years of creating incredible memories on the water.</p>
+            </div>
         </section>
-        <section>
+        <section class="adventures-section">
             <h2>Adventure Awaits You!</h2>
-            <img src="images/one.jpg" alt="Image one">Image one
-            <img src="images/two.jpg" alt="Image two">Image two
-            <img src="images/three.jpg" alt="Image three">Image three
-            <img src="images/four.jpg" alt="Image four">Image four
-            <img src="images/five.jpg" alt="Image five">Image five
+            <div class="adventure-grid">
+                <figure>
+                    <img src="images/one.jpg" alt="Image one">
+                    <figcaption>Canyon Run</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/two.jpg" alt="Image two">
+                    <figcaption>Rapid Rush</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/three.jpg" alt="Image three">
+                    <figcaption>Lazy River</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/four.jpg" alt="Image four">
+                    <figcaption>Rocky Rapids</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/five.jpg" alt="Image five">
+                    <figcaption>North Fork</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
     <footer>
