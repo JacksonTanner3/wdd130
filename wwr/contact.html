@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>RapidRush Adventures | Contact Us | WDD 130</title>
+    <meta name="author" content="Jackson Tanner">
+    <meta name="description"
+        content="Contact RapidRush Adventures for whitewater rafting inquiries, reservations, and feedback.">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/raftinglogo.jpg" alt="Rafting Site Logo">
+        <h1>RapidRush Adventures</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="trips.html">Trips</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <h1>Contact Us</h1>
+        </section>
+
+        <section class="company-info-map">
+            <div class="company-details">
+                <h2>Our Details</h2>
+                <p><strong>Address:</strong> 333 Rapids Ln, Rapidrush City, UT 84604</p>
+                <p><strong>Phone:</strong> <a href="tel:+18013334321">801-333-4321</a></p>
+                <p><strong>Email:</strong> <a
+                        href="mailto:info@rapidrushadventures.com">info@rapidrushadventures.com</a></p>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7100.172659279061!2d-103.33408915414525!3d43.87512072687947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRapid%20rush%20adventures!5e0!3m2!1sen!2sus!4v1749268537385!5m2!1sen!2sus"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employees-grid">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Smiling Rafting Guide Sarah">
+                    <figcaption>Sarah - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Smiling Rafting Guide Mike">
+                    <figcaption>Mike - Operations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Smiling Rafting Guide Emily">
+                    <figcaption>Emily - Customer Relations</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form">
+                <label for="userName">Your Name:</label>
+                <input type="text" id="userName" name="userName" required>
+
+                <label for="userEmail">Your Email:</label>
+                <input type="email" id="userEmail" name="userEmail" required>
+
+                <fieldset>
+                    <legend>Purpose of your message:</legend>
+                    <div class="radio-group">
+                        <input type="radio" id="generalInquiry" name="messagePurpose" value="general">
+                        <label for="generalInquiry">General Inquiry</label><br>
+                        <input type="radio" id="reservationQuestion" name="messagePurpose" value="reservation">
+                        <label for="reservationQuestion">Reservation Question</label><br>
+                        <input type="radio" id="websiteSuggestion" name="messagePurpose" value="website">
+                        <label for="websiteSuggestion">Suggestions</label>
+                    </div>
+                </fieldset>
+
+                <label for="userMessage">Your Message:</label>
+                <textarea id="userMessage" name="userMessage" rows="6" required></textarea>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit">Send Your Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>©️ 2025 RapidRush Adventures | Jackson Tanner</p>
+        <p><a href="images/wireframe.jpg" target="_blank">Contact Us Wireframe</a></p>
+        <nav class="socialmedia">
+            <a href="https://www.youtube.com/">
+                <img src="images/youtube.png" alt="Youtube Icon">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook.png" alt="Facebook Icon">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.png" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
