@@ -73,7 +73,7 @@ nav {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin: 0;
-    color: var(--accent2-color);
+    color: white;
 }
 
 .hero article img {
@@ -243,7 +243,7 @@ footer .socialmedia img:hover {
 .contact-hero {
     text-align: center;
     padding: 30px 20px;
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
     color: white;
     margin-bottom: 30px;
     max-width: none;
@@ -353,7 +353,7 @@ footer .socialmedia img:hover {
 /* Contact Form Section */
 .contact-form-section {
     padding: 20px;
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
     color: white;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -520,5 +520,242 @@ footer p a:hover {
 
     h1 {
         font-size: 1.8em;
+    }
+}
+
+.index-hero {
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.index-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.index-hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--accent1-color);
+    padding: 16px;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.newsletter {
+    max-width: 840px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--accent1-color);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.newsletter h2 {
+    margin-top: 0;
+}
+
+.newsletter form {
+    display: grid;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.newsletter input {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.newsletter button {
+    padding: 10px 16px;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent2-color)
+}
+
+.call-to-action {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    background-color: var(--accent1-color);
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.call-to-action h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.call-to-action p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #3e7b59;
+}
+
+.grid-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.grid-info div {
+    text-align: center;
+}
+
+.grid-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-info h3 {
+    margin-top: 16px;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.grid-info p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Trips Page Specific Styling */
+.call-to-action {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.btn-contact {
+    background-color: var(--accent2-color);
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: var(--primary-color);
+}
+
+.trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.trip {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.trip h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.trip p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.trips-table {
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.trips-table h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: var(--accent2-color);
+    color: white;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 600px) {
+    .trip-descriptions {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        font-size: 14px;
     }
 }
